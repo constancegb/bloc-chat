@@ -1,13 +1,19 @@
 <div class="modal">
+  <div class="modal-content">
+
     <div class="modal-title">
         <h2 id="modal-label">Create new room</h2>
     </div>
-    <div id="modal-desc">
-        <form ng-submit="$ctrl.ok()">
-             Enter a room name
-             <input class="input" type="text" name="room-name" ng-model="$ctrl.name">
-             <button class="btn btn-cancel" type="button" ng-click="$ctrl.close()">Cancel</button>
-             <button class="btn btn-create" type="button" ng-click="$ctrl.ok()">Create room</button>
-        </form>
+
+    <div id="modal-prompt">
+      <p>Enter a room name</p>
+      <input class='modal-input' type="text" name="room-name" ng-model="modals.newRoom">
     </div>
+
+    <div class='modal-buttons'>
+      <button class="btn btn-cancel" type="button" ng-click="modals.cancel()">Cancel</button>
+      <button class="btn btn-create" type="button" ng-click="modals.ok()">Create room</button>
+    </div>
+
+  </div>
 </div>
