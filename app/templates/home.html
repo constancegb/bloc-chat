@@ -1,10 +1,10 @@
 <div id="sidebar">
 
     <div class="header">
-      <h1>Bloc Chat</h1>
-      <div ng-controller="ModalCtrl as modals">
-        <button type="button" class="btn btn-new" ng-click="modals.open()">New Room</button>
-      </div>
+        <h1>Bloc Chat</h1>
+        <div>
+          <button type="button" class="btn btn-new" ng-click="home.RoomModal()">New Room</button>
+        </div>
     </div>
 
     <div class="roomslist" ng-repeat="room in home.rooms">{{room.name}}</div>
