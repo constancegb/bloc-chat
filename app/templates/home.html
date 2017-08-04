@@ -7,8 +7,21 @@
         </div>
     </div>
 
-    <div class="roomslist" ng-repeat="room in home.rooms">{{room.name}}</div>
+    <div class="roomslist" ng-repeat="room in home.rooms">
+      <p ng-click="home.setActiveRoom(room)">{{room.name}}</p>
+    </div>
 
+</div>
+
+
+
+<div class ="roomMessages">
+    <h2>{{this.activeRoom.name}}</h2>
+    <div class="messages" ng-repeat="message in home.messages">
+        <div class="username">{{message.username}}</div>
+        <div class="sentAt">{{message.sentAt}}</div>
+        <div class="content">{{message.content}}</div>
+    </div>
 </div>
 
 <ui-view></ui-view>
