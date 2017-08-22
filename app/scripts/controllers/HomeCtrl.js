@@ -11,7 +11,7 @@
              });
          }
 
-         $ctrl.setActiveRoom = fonction(room) {
+         $ctrl.setActiveRoom = function(room) {
            $ctrl.activeRoom = room;
            $ctrl.messages = Message.getByRoomId($ctrl.activeRoom.$id);
          }

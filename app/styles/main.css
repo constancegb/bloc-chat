@@ -10,10 +10,11 @@ body {
 }
 
 #sidebar {
-    width: 300px;
+    width: 25%;
     height: 1000px;
     background-color: #e7e8ea;
     margin-top: -24px;
+    display: inline-block;
 }
 
 .header {
@@ -100,4 +101,41 @@ h1 {
 
 .modal-buttons {
   justify-content: space-between;
+}
+
+.roomslist:hover {
+  cursor: pointer;
+}
+
+.room-messages {
+  position: relative;
+  width: 75%;
+  float: right;
+}
+
+.room-name {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-family: helvetica;
+  font-weight: lighter;
+}
+
+.messages {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.sentAt {
+  float: right;
+  font-style: italic;
+  color: lightgrey;
+}
+
+.empty {
+  margin-top: 25px;
+  border-bottom: 1px solid lightgrey;
 }

@@ -15,12 +15,15 @@
 
 
 
-<div class ="roomMessages">
-    <h2>{{this.activeRoom.name}}</h2>
+<div class ="room-messages">
+    <div class="room-name"><h2>{{home.activeRoom.name}}</h2></div>
     <div class="messages" ng-repeat="message in home.messages">
+
         <div class="username">{{message.username}}</div>
-        <div class="sentAt">{{message.sentAt}}</div>
         <div class="content">{{message.content}}</div>
+
+        <div class="sentAt">{{message.sentAt}}</div>
+        <div class="empty"></div>
     </div>
 </div>
 
