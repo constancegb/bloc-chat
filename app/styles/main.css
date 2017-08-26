@@ -139,3 +139,12 @@ h1 {
   margin-top: 25px;
   border-bottom: 1px solid lightgrey;
 }
+
+.username-modal {
+  width: 300px;
+  height: 225px;
+  background-color: #d8d8d8;
+  position: fixed;
+  top: 30px;
+  left: 500px;
+}

@@ -1,0 +1,18 @@
+<div class="username-modal">
+  <div class="modal-content">
+
+    <div class="modal-title">
+        <h2 id="modal-label">Set a username</h2>
+    </div>
+
+    <div id="modal-prompt">
+      <p>This name will be displayed to all users</p>
+      <input class='modal-input' type="text" name="user-name" ng-model="modals.username" required>
+    </div>
+
+    <div class='modal-buttons'>
+      <button class="btn btn-create" type="button" ng-click="modals.createUsername()" ng-disabled="modal.username === null">Set Username</button>
+    </div>
+
+  </div>
+</div>
