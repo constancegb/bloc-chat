@@ -27,4 +27,9 @@
     </div>
 </div>
 
+<div class="message-bar">
+  <input type="text" name="message-content" placeholder="Write Your Message Here..." class="messageContent" ng-model="home.newMessage.content">
+  <button class="sendMessage" type="button" ng-click="home.sendMessage()">Send</button>
+</div>
+
 <ui-view></ui-view>
